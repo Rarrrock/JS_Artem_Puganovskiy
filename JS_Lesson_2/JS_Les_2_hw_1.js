@@ -43,25 +43,31 @@ let book3={
 
 <!-- - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.-->
 
+let authors = [
+    author1 = {name: 'AAA', age: 43},
+    author2 = {name: 'BBB', age: 24},
+    author3 = {name: 'CCC', age: 11}
+]
+
 let book4={
     title: 'AAAAAAAAA',
     pageCount: 623,
     genre: 'ooo',
-    authors: ['AAA', 43]
+    author: authors[0]
 }
 
 let book5={
     title: 'BBBBBBB',
     pageCount: 111,
     genre: 'hhhh',
-    authors: ['BBB', 24]
+    author: authors[1]
 }
 
 let book6={
     title: 'CCCCCCC',
     pageCount: 35,
     genre: 'mmbb',
-    authors: ['CCC', 11]
+    author: authors[2]
 }
 
 
