@@ -12,7 +12,7 @@ for (let i = 0; i < 10; i++) {
 
 let i = 0;
 while (i < 20) {
-    document.write(`<h1>Довільний текст - ${i}</h1>`)
+    document.write(`<h1>Довільний текст - ${i}</h1>`);
     console.log(i);
     i++;
 }
