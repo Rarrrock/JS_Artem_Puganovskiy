@@ -17,13 +17,13 @@ createList(142, true, false, 'jjij', '325ff');
 
 <!-- - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.-->
 
-function createArrayObjects() {
+function createArrayObjects(names) {
     document.write(`<ul>`);
 
-    for (const argument of arguments) {
+    for (const name of names) {
             document.write(`<li>`);
-            for (const argumentKey in argument) {
-            document.write(`${argumentKey}: ${argument[argumentKey]} `)
+            for (const nameKey in name) {
+            document.write(`${nameKey}: ${name[nameKey]} `)
         }
     }
 
@@ -40,7 +40,18 @@ let arrayNames = [
 createArrayObjects (arrayNames);
 
 
-// for ( const user of users) {
+<!-- - створити функцію яка повертає найменше число з масиву-->
+function minimum(numbersArr) {
+    let min = numbersArr[0];
+    for (i = 1; i < numbersArr.length; i++){
+        if (numbersArr[i] < min) {min = numbersArr[i]}
+    }
+document.write(`<li>ArayMinimun = ${min}</li>`)
+}
+let numbers = [74, 51, 76, 234, 62, 49, 237, 99];
+minimum(numbers);
+
+// for (const user of users) {
 //     if (user.status) {
 //         document.write(`<li>`);
 //
@@ -49,3 +60,4 @@ createArrayObjects (arrayNames);
 //         }
 //     }
 // }
+
