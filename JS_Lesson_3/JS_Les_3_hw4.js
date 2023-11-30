@@ -20,7 +20,7 @@ let users = [
 document.write('<ul>');
 
     for ( const user of users) {
-        if (user.status === true) {
+        if (user.status) {
             document.write(`<li>`);
 
             for (const userKey in user) {
@@ -30,7 +30,7 @@ document.write('<ul>');
     }
 
 for ( const user of users) {
-    if (user.status === false) {
+    if (!user.status) {
         document.write(`<li>`);
 
         for (const userKey in user) {
