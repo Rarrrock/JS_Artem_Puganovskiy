@@ -12,5 +12,12 @@ let text3X = (text) => document.write(`<ul><li>${text}</li><li>${text}</li><li>$
 text3X('myText_2');
 
 <!-- - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)-->
-let textAnyLi = (text,count) => document.write(`<ul> {for (let i = 0; i < count; i++){<li>${text}</li>}</ul>`);
+let textAnyLi = (text,count) => {
+    document.write('<ul>');
+    {
+        for (let i = 0; i < count; i++)
+            document.write(`<li>${text}</li>`);
+    }
+    document.write('</ul>');
+};
 textAnyLi('myText_3',5);
