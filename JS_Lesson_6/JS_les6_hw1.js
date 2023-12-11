@@ -13,23 +13,34 @@
 // 'hello world', 'lorem ipsum', 'javascript is cool'
 // - Перевести до нижнього регістру настипні стрінгові значення
 // 'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
-let length = (arr) => {
-    for (let i = 0; i < arr.length; i++) {
-        console.log(arr[i].length);
-        console.log(arr[i].toUpperCase());
-        console.log(arr[i].toLowerCase());
-    }
-}
-length(['hello world', 'lorem ipsum', 'javascript is cool']);
+
+// - Знайти та вивести довижину настипних стрінгових значень
+const arr = ['hello world', 'lorem ipsum', 'javascript is cool'];
+arr.map((item) => console.log(item.length));
+
+// - Перевести до великого регістру наступні стрінгові значення
+const arr2 = ['hello world', 'lorem ipsum', 'javascript is cool'];
+arr2.map((item) => console.log(item.toUpperCase()));
+
+// - Перевести до нижнього регістру настипні стрінгові значення
+const arr3 = ['HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'];
+arr3.map((item) => console.log(item.toLowerCase()));
+
+// let length = (arr) => {
+//     for (let i = 0; i < arr.length; i++) {
+//         console.log(arr[i].length);
+//         console.log(arr[i].toUpperCase());
+//         console.log(arr[i].toLowerCase());
+//     }
+// }
+// length(['hello world', 'lorem ipsum', 'javascript is cool']);
 
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 // let str = ' dirty string   ';
-
 let cleaner = (str) => {
     console.log(str);
     console.log(str.trim());
 }
-
 cleaner(' dirty string   ');
 
 // let cleaner = (str) => {
